@@ -358,7 +358,7 @@ body {
   #hero {
     width: 100%;
     height: 70vh;
-    background: url('/assets/img/bg.jpeg');
+    background: url('./assets/img/bg.jpeg');
     /* background-color: #fef8f5; */
     background-repeat: no-repeat;
     background-size: cover;
