@@ -10,6 +10,9 @@
 --------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Kanit:ital,wght@1,200&family=Lobster&family=Poppins:wght@300;400&family=Roboto:wght@500;700&family=Staatliches&display=swap');
 
+/* *{
+  outline: 1px solid red;
+} */
 
 body {
     font-family: "Poppins", sans-serif;
@@ -355,8 +358,8 @@ body {
   #hero {
     width: 100%;
     height: 70vh;
-    /* background: url('/assets/img/bg.jpeg'); */
-    background-color: #fef8f5;
+    background: url('/assets/img/bg.jpeg');
+    /* background-color: #fef8f5; */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -370,17 +373,19 @@ body {
     font-size: 58px;
     font-weight: 700;
     line-height: 56px;
-    color: #4b4b4b;
+    color: #fff;
+    text-shadow:  7px 7px 7px rgba(0, 0, 0, 0.458);
   }
   
   #hero h2 {
-    color: #7979;
+    color: #fff;
+    text-shadow:  7px 7px 7px rgba(0, 0, 0, 0.458);
     margin: 15px 0 0 0;
     font-size: 34px;
   }
   
   #hero .btn-get-started {
-    font-family: "Raleway", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 1px;
@@ -406,7 +411,7 @@ body {
   
   @media (max-width: 991px) {
     #hero {
-      height: calc(100vh - 72px);
+      height: calc(70vh - 72px);
     }
   
     #hero .animated {
@@ -503,7 +508,7 @@ body {
     position: relative;
     font-size: 32px;
     font-weight: 700;
-    color: #4e4039;
+    color: #4b4b4b;
   }
   
   .section-title p::after {
@@ -512,7 +517,7 @@ body {
     display: block;
     width: 60px;
     height: 2px;
-    background: #eb5d1e;
+    background: #eb1e1e;
     bottom: 0;
     left: calc(50% - 30px);
   }
@@ -575,37 +580,53 @@ body {
 
   .about h3 {
     font-weight: 700;
-    font-size: 34px;
-    color: #4e4039;
-  }
-  
-  .about h4 {
-    font-size: 20px;
-    font-weight: 700;
-    margin-top: 5px;
-    color: #7a6960;
-  }
-  
-  .about i {
-    font-size: 48px;
-    margin-top: 15px;
-    color: #f39e7a;
+    font-size: 32px;
+    color: #4b4b4b;
   }
   
   .about p {
-    font-size: 20px;
+    font-size: 16px;
     color: #5a6570;
   }
   
   @media (max-width: 991px) {
     .about .about-img img {
-      max-width: 90%;
+      max-width: 100%;
     }
   }
   
   @media (max-width: 767px) {
     .about .about-img img {
-      max-width: 90%;
+      max-width: 100%;
+    }
+  }
+
+  /* contoh */
+
+  .contoh-img{
+    width: 600px;
+  }
+
+  .contoh h3 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #4b4b4b;
+  }
+  
+  .contoh p {
+    font-size: 16px;
+    color: #5a6570;
+  }
+  
+  @media (max-width: 991px) {
+    .contoh .contoh-img img {
+      max-width: 80%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .contoh .contoh-img img {
+      max-width: 80%;
     }
   }
   
@@ -626,15 +647,15 @@ body {
   }
   
   .services .icon-box:hover {
-    transform: translateY(-5px);
-    border-color: #ef7f4d;
+    transform: translateY(-10px);
+    border-color: #eb1e1e;
   }
   
   .services .icon i {
     font-size: 48px;
     line-height: 1;
     margin-bottom: 15px;
-    color: #ef7f4d;
+    color: #eb1e1e;
   }
   
   .services .title {
@@ -644,7 +665,7 @@ body {
   }
   
   .services .title a {
-    color: #111;
+    color: #eb1e1e;
   }
   
   .services .description {
@@ -699,7 +720,7 @@ body {
   
   .portfolio .portfolio-wrap::before {
     content: "";
-    background: rgba(122, 105, 96, 0.6);
+    background: rgba(0, 0, 0, 0.727);
     position: absolute;
     left: 100%;
     right: 0;
@@ -707,6 +728,10 @@ body {
     bottom: 0;
     transition: all ease-in-out 0.3s;
     z-index: 2;
+  }
+
+  .portfolio-info p{
+    padding: 0 7px;
   }
   
   .portfolio .portfolio-wrap img {
@@ -771,7 +796,6 @@ body {
   .portfolio .portfolio-wrap .portfolio-info p {
     color: #ffffff;
     font-size: 14px;
-    text-transform: uppercase;
   }
   
   .portfolio .portfolio-wrap:hover::before {
@@ -1350,13 +1374,13 @@ body {
   
   #footer .footer-top .footer-links ul a:hover {
     text-decoration: none;
-    color: #eb5d1e;
+    color: #eb1e1e;
   }
   
   #footer .footer-top .social-links a {
     font-size: 18px;
     display: inline-block;
-    background: #eb5d1e;
+    background: #eb1e1e;
     color: #fff;
     line-height: 1;
     padding: 8px 0;
@@ -1369,7 +1393,7 @@ body {
   }
   
   #footer .footer-top .social-links a:hover {
-    background: #ef7f4d;
+    background: #eb1e1e;
     color: #fff;
     text-decoration: none;
   }
@@ -1387,7 +1411,7 @@ body {
   }
   
   #footer .credits a {
-    color: #eb5d1e;
+    color: #eb1e1e;
   }
   
   @media (max-width: 575px) {
